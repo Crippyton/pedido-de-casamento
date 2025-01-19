@@ -1,0 +1,94 @@
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #fad0c4);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h1 {
+    color:black;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .gif-container {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gif-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #btnYes,
+  #btnNo {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #btnYes {
+    background-color: #28a745;
+    margin-top: 20px;
+  }
+
+  #btnYes:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+  }
+
+  #btnNo {
+    background-color: #dc3545;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #btnNo:hover {
+    transform: rotate(10deg);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .gif-container {
+      width: 300px;
+      height: 300px;
+    }
+
+    #btnYes, #btnNo {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
